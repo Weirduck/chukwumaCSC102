@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{siunitx}
+\sisetup{
+round-mode=places,
+round-precision=2,
+}
+\begin{document}
+	\begin{table}[h!]
+		\begin{center}
+			\caption{multirow table.}
+			\label{tab:table1}
+			\begin{tabular}{l|s|r}
+				\hline
+				\textbf{value1} & \textbf{value2} & \textbf{value3}\\
+				$\alpha$ & \beta$ & \gamma$ \\
+				\hline
+				\multirow{2}{ *}{12} & 1110.1 & a\\
+				& 10.1 & b\\
+				\hline
+				14 & 25.113231 & \\
+				\hline
+				36 & 35.123531 & c\\
+				\hline
+			\end{tabular}
+		\end{center}
+	\end{table}
+\end{document}
